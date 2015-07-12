@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:paddingBottom="30dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/ivwNoDataLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/filter_fail_logo" />
+
+    <TextView
+        android:id="@+id/tvwNoDataNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivwNoDataLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="middle"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvwNoDataDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvwNoDataNotice"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="middle"
+        android:singleLine="true" />
+
+</RelativeLayout>

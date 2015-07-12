@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg_two" >
+
+    <RelativeLayout
+        android:layout_width="330dip"
+        android:layout_height="420dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/win_bg" >
+
+        <TextView
+            android:id="@+id/tv_win_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="请订购"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_win_login"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/win_close" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_win_login"
+            android:layout_marginTop="10dip"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="10dip"
+            android:text="包月"
+            android:textColor="@color/btn_focus"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_by"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_by"
+            android:layout_marginLeft="20dip"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/cb_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15元/1个月" />
+
+            <RadioButton
+                android:id="@+id/cb_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90元/6个月" />
+
+            <RadioButton
+                android:id="@+id/cb_180"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="180元/12个月" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/lines"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll_by"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_zf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lines"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="10dip"
+            android:text="支付方式"
+            android:textColor="@color/btn_focus"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_zf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_zf"
+            android:layout_marginLeft="20dip"
+            android:orientation="vertical" >
+            <RadioButton
+                android:id="@+id/cb_zfb"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="支付宝" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/button_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_zf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/my_btn"
+                android:text="订购"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

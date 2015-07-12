@@ -1,0 +1,142 @@
+<resources>
+
+    <string name="app_name">TV189院线</string>
+    <string name="host_uri">http://testmapps.tv189.cn</string>
+    <string name="home_recommendation">推荐</string>
+    <string name="home_movie">电影</string>
+    <string name="home_search">搜索</string>
+    <string name="home_nearby">热点</string>
+    <string name="home_mine">我的</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <!-- 电影相关 -->
+    <string name="tx_vip_film">会员影片</string>
+    <string name="tx_general_film">免费影片</string>
+    <string name="tx_filter">筛选</string>
+    <string name="tx_close_filter">收起</string>
+    <!-- 我的 -->
+    <string name="click_login">点击登录</string>
+    <string name="func_history">播放记录</string>
+    <string name="func_favorite">我的收藏</string>
+    <string name="func_download">我的下载</string>
+    <string name="func_setting">我的设置</string>
+    <string name="func_update_password">修改密码</string>
+    <string name="func_consume">我的消费</string>
+    <string name="func_update">检查更新</string>
+    <string name="func_feedback">卡支付</string>
+    <string name="default_img_header">http://nuc.tv189.com/images/noavatar_ding.gif</string>
+    <string name="login_title">登录</string>
+    <string name="register_title">注册</string>
+
+    <!-- 搜索 -->
+    <string name="edtSearchBox_hint">搜索</string>
+    <string name="hotTitle">热门影片</string>
+    <string name="noPlayNotice">很遗憾，暂无可播放的相关影片</string>
+    <string name="relateTitle">更多相关影片信息</string>
+    <string name="noDataNotice">很遗憾，没有找到相关影片</string>
+    <string name="noDataDesc">请检查关键词是否正确</string>
+    <!-- 推荐 -->
+    <string name="recoVideoTitle">今日推荐</string>
+    <string name="newVideoTitle">最新上线</string>
+    <string name="hotVideoTitle">热门大片</string>
+    <string name="cctv6VideoTitle">CCTV6</string>
+    <string name="freeVideoTitle">免费影片</string>
+    <!-- 搜索结果Item -->
+    <string name="default_unknown">未知</string>
+    <string name="tvwVideoContent">未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知未知</string>
+    <string name="default_score">0.0</string>
+    <string name="tvwVideoDirectorNotice">导演：</string>
+    <string name="tvwVideoActorNotice">主演：</string>
+    <string name="tvwVideoContentNotice">剧情介绍：</string>
+
+    <!-- 设置 -->
+    <string name="funcPushNotice">消息推送</string>
+    <string name="funcPushDesc">实时接收TV189相关信息,如：最新资讯、最新电影等</string>
+    <string name="funcMoblieNetNotice">2G/3G网络使用</string>
+    <string name="funcMoblieNetDesc">2G/3G网络时下载、浏览视频</string>
+    <string name="funcResolution">默认分辨率（观看、下载）</string>
+    <string name="funcClearCacheNotice">清空缓存</string>
+    <string name="funcScoreNotice">给我评分</string>
+    <string name="funcScoreDesc">亲，如果喜欢记得给好评！！！</string>
+    <string name="funcAppFuncNotice">功能介绍</string>
+    <string name="funcAppFuncDesc">客户端的功能描述、说明</string>
+
+    <!-- 播放器 -->
+    <string name="player_video_info">影片信息</string>
+    <string name="player_video_related">相关</string>
+    <string name="player_video_buy">购买</string>
+
+    <!-- 下载 -->
+    <string name="downing">下载中</string>
+    <string name="wating">等待中</string>
+    <string name="stoped">已暂停</string>
+    <string name="completed">已完成</string>
+    <string name="select_all">全选</string>
+    <string name="delete">删除</string>
+    <!-- 提交 -->
+    <string name="feedbackDesc">我们非常渴望听到您的意见。请留下你的联系方式</string>
+    <string name="edtFeedbackHint">请在这里留下您的意见</string>
+    <string name="emailNoticeTitle">亲，记得留下你的联系方式</string>
+    <string name="emailNoticeDesc">亲，我们将自动关联登录账户的邮箱</string>
+    <string name="edtEmailHint">请输入e-mail</string>
+    <string name="btnSubmit">提交</string>
+    <string name="btnAllowSubmit">关联提交</string>
+    <string name="submitError">提交失败</string>
+    <string name="submitSuccess">提交成功，谢谢您的支持</string>
+    <string name="btnNoEmial">匿名提交</string>
+    <string name="emailError">亲，你的邮箱格式不正确</string>
+
+    <!-- 筛选 -->
+    <string name="filter_noDataNotice">暂时没有影片</string>
+    <string name="filter_noDataDesc">重新设置条件试试吧</string>
+    <string name="loadingDesc">请求数据中&#8230;&#8230;</string>
+
+    <!-- 网络错误 -->
+    <string name="netErrorNotice">找不到内容了!</string>
+    <string name="netErrorDesc">请检查网络连接情况</string>
+    <string name="btnRefresh">点击刷新</string>
+
+    <!-- 检查更新 -->
+    <string name="btnUpdate">下载更新</string>
+    <string name="updateTimeDesc">更新时间</string>
+    <string name="updateDesc">版本内容</string>
+    <string name="updateState_no">已经是最新版本</string>
+    <string name="updateState_ing">检查更新中&#8230;&#8230;</string>
+
+    <!-- 播放历史 -->
+    <string name="cancel">取消</string>
+
+    <!-- 消费记录 -->
+    <string name="notloginTip">您尚未登录，请先登录</string>
+    <string name="consumeNullTip">您还没有相关的消费记录</string>
+    <string name="noData">暂时没有相关数据</string>
+
+    <!-- vip -->
+    <string name="vip_latest">最新</string>
+    <string name="vip_latest_desc">院线新片抢先看</string>
+    <string name="vip_complete">最全</string>
+    <string name="vip_complete_desc">3000部最全影库</string>
+    <string name="vip_hd">超清</string>
+    <string name="vip_hd_desc">超高清画质观影</string>
+    <string name="vip_exclusive">专享</string>
+    <string name="vip_exclusive_desc">会员享专属客服</string>
+    <string name="buy_vip">开通会员</string>
+    <string name="confirm_pay">确认支付</string>
+    <string name="confirm_order">确认订单</string>
+    <string name="order_info">订单信息</string>
+    <string name="pay_method">支付方式</string>
+    <string name="pay_method_alipay">支付宝网页支付</string>
+    <string name="default_price">——</string>
+    <string name="tvwVipMonthUnit">元</string>
+    <string name="tvwAccountNotice">账　　户：</string>
+    <string name="tvwMonthNotice">包月时长：</string>
+    <string name="tvwPayNotice">支付金额：</string>
+    <string name="waitForLoading">正在加载，请稍候...</string>
+    
+    
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/videoplay_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cr_transparent_50"
+        >
+
+        <Button
+            android:id="@+id/playRelated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_centerInParent="true"
+            android:text="相关"
+            android:textColor="@color/white"
+            android:background="@drawable/player_ctr_selector"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/playChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/playRelated"
+            android:background="@drawable/player_ctr_selector"
+            android:gravity="center"
+            android:text="高清"
+            android:textColor="@color/white" />
+        
+        <RelativeLayout
+        android:id="@+id/videoplay_layout_title"
+        android:layout_width="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:background="@color/cr_transparent_50"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" >
+
+        <com.m1905.mobile.ui.AlwaysMarqueeView
+            android:id="@+id/videoview_tv_title"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dip"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:textSize="20px" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

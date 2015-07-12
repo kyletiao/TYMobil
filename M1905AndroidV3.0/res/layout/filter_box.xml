@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rltFilmMtype"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/filter_paddingTopBottom"
+        android:paddingLeft="@dimen/horizontalSpacing"
+        android:paddingRight="@dimen/horizontalSpacing"
+        android:paddingTop="@dimen/filter_paddingTopBottom" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/rgpFilmMtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/lineMtype"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rltFilmMtype"
+        android:background="@color/filter_line"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/rltFilmArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineMtype"
+        android:paddingBottom="@dimen/filter_paddingTopBottom"
+        android:paddingLeft="@dimen/horizontalSpacing"
+        android:paddingRight="@dimen/horizontalSpacing"
+        android:paddingTop="@dimen/filter_paddingTopBottom" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/rgpFilmArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/lineArea"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rltFilmArea"
+        android:background="@color/filter_line"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/rltFilmYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineArea"
+        android:paddingBottom="@dimen/filter_paddingTopBottom"
+        android:paddingLeft="@dimen/horizontalSpacing"
+        android:paddingRight="@dimen/horizontalSpacing"
+        android:paddingTop="@dimen/filter_paddingTopBottom" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/rgpFilmYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/lineYear"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rltFilmYear"
+        android:background="@color/filter_line"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/rltFilmMost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineYear"
+        android:paddingBottom="@dimen/filter_paddingTopBottom"
+        android:paddingLeft="@dimen/horizontalSpacing"
+        android:paddingRight="@dimen/horizontalSpacing"
+        android:paddingTop="@dimen/filter_paddingTopBottom" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/rgpFilmMost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/lineMost"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rltFilmMost"
+        android:background="@color/filter_line"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/rltFilmType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineMost"
+        android:paddingBottom="@dimen/filter_paddingTopBottom"
+        android:paddingLeft="@dimen/horizontalSpacing"
+        android:paddingRight="@dimen/horizontalSpacing"
+        android:paddingTop="@dimen/filter_paddingTopBottom" >
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_close"
+            android:ellipsize="marquee"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="@string/tx_close_filter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/moive_vip_film_textsize" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnFilter"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/rgpFilmType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/lineType"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rltFilmType"
+        android:background="@color/filter_line"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

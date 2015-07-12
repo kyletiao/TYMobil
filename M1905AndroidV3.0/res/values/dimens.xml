@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 命名规则 -->
+    <!-- 父控件缩写_自身控件缩写   or id_属性名 -->
+    <!-- sp_父控件缩写_自身控件缩写   or id_属性名 -->
+    <!-- tab item height -->
+    <dimen name="tab_item_layout_height">61.5dp</dimen>
+
+    <!-- 启始页 -->
+    <dimen name="rlt_pbrLoading_layout_marginBottom">150dp</dimen>
+    <dimen name="rlt_pbrLoading_layout_height">5dp</dimen>
+    <dimen name="rlt_pbrLoading_layout_width">200dp</dimen>
+
+    <!-- 下拉刷新 -->
+
+
+    <!-- tab 选项卡 -->
+    <dimen name="tab_item_paddingTop">6dp</dimen>
+    <dimen name="tab_item_paddingBottom">4dp</dimen>
+
+    <!-- 头图 -->
+    <dimen name="flt_rltTopInfo_layout_height">34dp</dimen>
+    <dimen name="flt_rltTopInfo_paddingLeft">10dp</dimen>
+    <dimen name="flt_rltTopInfo_paddingRight">10dp</dimen>
+    <dimen name="sp_rlt_tvwTopInfo_textSize">14sp</dimen>
+
+    <!-- 推荐 -->
+    <dimen name="horizontalSpacing">10dp</dimen>
+    <dimen name="gvw_verticalSpacing">5dp</dimen>
+    <dimen name="gvw_horizontalSpacing">10dp</dimen>
+    <dimen name="rlt_rltRecoTitle_paddingBottom">10dp</dimen>
+    <dimen name="rlt_rltRecoTitle_paddingTop">10dp</dimen>
+    <dimen name="rlt_tvwRecoTitle_layout_marginLeft">5dp</dimen>
+    <dimen name="sp_rlt_tvwRecoTitle_textSize">16sp</dimen>
+
+    <!-- 电影 -->
+    <dimen name="moive_vip_film_textsize">16sp</dimen>
+    <dimen name="movie_menu_item_space">2dp</dimen>
+    <dimen name="rlt_contentName_padding_left">2dp</dimen>
+    <dimen name="sp_rlt_contentName_textSize">16sp</dimen>
+
+    <!-- 周边 -->
+    <dimen name="column_item_padding">8dp</dimen>
+    <dimen name="rlt_ivwColumnImg_layout_width">75dp</dimen>
+    <dimen name="rlt_ivwColumnImg_layout_height">96dp</dimen>
+    <dimen name="rlt_rltColumnInfo_paddingLeft">16dp</dimen>
+    <dimen name="rlt_rltColumnInfo_paddingRight">4dp</dimen>
+    <dimen name="sp_column_tvwColumnName_textSize">18sp</dimen>
+    <dimen name="column_item_tvw_paddingTop">4dp</dimen>
+    <dimen name="sp_column_textSize">14sp</dimen>
+    <dimen name="rlt_rltColumnInfo_HorizontalSpacing">1dp</dimen>
+    <dimen name="rlt_rltColumnInfo_VerticalSpacing">1dp</dimen>
+    <!-- 我的 -->
+    <dimen name="rlt_rltMineCenter_paddingLeft">30dp</dimen>
+    <dimen name="rlt_rltMineCenter_paddingRight">30dp</dimen>
+    <dimen name="rlt_gvwFunction_verticalSpacing">20dp</dimen>
+    <dimen name="sp_rlt_tvwUserName_textSize">14sp</dimen>
+    <dimen name="sp_rlt_tvwVip_textSize">8sp</dimen>
+    <dimen name="rlt_tvwUserName_layout_marginLeft">4dp</dimen>
+    <dimen name="rlt_rltLoginItem_paddingTop">8dp</dimen>
+    <dimen name="rlt_rltLoginItem_paddingBottom">8dp</dimen>
+    <dimen name="rlt_gvwFunction_columnWidth">320dp</dimen>
+    <dimen name="rlt_gvwFunction_horizontalSpacing">10dp</dimen>
+    <dimen name="sp_llt_setting_title_textSize">18sp</dimen>
+    <dimen name="sp_llt_setting_summary_textSize">14sp</dimen>
+    <dimen name="navi_title_size">17sp</dimen>
+
+    <!-- video_item -->
+    <dimen name="rlt_ivwVideoImg_layout_width">94dp</dimen>
+    <dimen name="rlt_ivwVideoImg_layout_height">130dp</dimen>
+    <dimen name="myrlt_ivwVideoImg_layout_width">152dp</dimen>
+    <dimen name="myrlt_ivwVideoImg_layout_height">94dp</dimen>
+    <dimen name="rlt_tvwVideoName_paddingLeft">0dp</dimen>
+    <dimen name="rlt_tvwVideoName_paddingRight">0dp</dimen>
+    <dimen name="rlt_tvwVideoName_paddingTop">5dp</dimen>
+    <dimen name="rlt_tvwVideoName_paddingBottom">5dp</dimen>
+    <dimen name="sp_rlt_tvwVideoName_textSize">12sp</dimen>
+
+    <!-- 搜索 -->
+    <dimen name="rlt_rltSearchTop_paddingTop">9dp</dimen>
+    <dimen name="rlt_rltSearchTop_paddingBottom">9dp</dimen>
+    <dimen name="rlt_rltSearchBox_layout_marginLeft">9dp</dimen>
+    <dimen name="rlt_btnSearch_layout_marginLeft">5dp</dimen>
+    <dimen name="rlt_btnSearch_layout_marginRight">9dp</dimen>
+    <dimen name="rlt_btnDelete_layout_margin">8dp</dimen>
+    <dimen name="rlt_edtSearchBox_marginLeft">8dp</dimen>
+    <dimen name="rlt_gvwHotWords_columnWidth">320dp</dimen>
+    <dimen name="rlt_ivwHotLogo_layout_marginLeft">9dp</dimen>
+    <dimen name="sp_rlt_tvwHotTitle_textSize">16sp</dimen>
+    <dimen name="rlt_tvwHotTitle_layout_marginLeft">10dp</dimen>
+    <dimen name="rlt_rltHotTitle_paddingBottom">10dp</dimen>
+    <dimen name="rlt_rltHotTitle_paddingTop">10dp</dimen>
+    <dimen name="sp_rlt_tvwHotWord_textSize">16sp</dimen>
+    <dimen name="rlt_tvwHotWord_paddingLeft">10dp</dimen>
+    <dimen name="rlt_tvwHotWord_paddingRight">10dp</dimen>
+    <dimen name="hot_item_paddingBottom">10dp</dimen>
+    <dimen name="hot_item_paddingTop">10dp</dimen>
+    <dimen name="no_data_box_paddingBottom">10dp</dimen>
+    <dimen name="no_data_box_paddingTop">10dp</dimen>
+    <dimen name="rlt_tvwNoDataNotice_layout_layout_marginTop">4dp</dimen>
+    <dimen name="rlt_ivwSearchLogo_layout_marginBottom">4dp</dimen>
+    <dimen name="rlt_ivwRelateLogo_layout_marginLeft">9dp</dimen>
+    <dimen name="rlt_rltRelateTitle_paddingBottom">10dp</dimen>
+    <dimen name="rlt_rltRelateTitle_paddingTop">10dp</dimen>
+    <dimen name="rlt_tvwRelateTitle_layout_marginLeft">10dp</dimen>
+    <dimen name="sp_rlt_tvwRelateTitle_textSize">16sp</dimen>
+
+    <!-- 搜索结果Item -->
+    <dimen name="sp_search_tvwVideoScore_textSize">22sp</dimen>
+    <dimen name="sp_search_tvwVideoName_textSize">18sp</dimen>
+    <dimen name="sp_search_textSize">14sp</dimen>
+    <dimen name="search_item_padding">8dp</dimen>
+    <dimen name="rlt_rltVideoInfo_paddingLeft">16dp</dimen>
+    <dimen name="rlt_rltVideoInfo_paddingRight">4dp</dimen>
+    <dimen name="search_item_tvw_paddingTop">4dp</dimen>
+
+    <!-- 播放器 -->
+    <dimen name="mini_player_height">180dp</dimen>
+    <dimen name="mini_player_control_padding_5">5dp</dimen>
+    <dimen name="mini_player_control_padding_10">10dp</dimen>
+
+    <!-- 筛选 -->
+    <dimen name="filter_paddingTopBottom">6dp</dimen>
+    <!-- 设置 -->
+    <dimen name="item_minHeight">60dp</dimen>
+
+    <!-- 历史和收藏 -->
+    <dimen name="bottom_btn_height">55dp</dimen>
+    <dimen name="top_navi_height">55dp</dimen>
+    <!-- 搜索背景框大小 -->
+    <dimen name="search_box_bg_height">36.67dp</dimen>
+
+    <!-- vip -->
+    <dimen name="vip_func_textSize">18sp</dimen>
+    <dimen name="vip_desc_textSize">16sp</dimen>
+    <dimen name="vip_desc_padding">10dp</dimen>
+    <dimen name="vip_desc_marginTop">6dp</dimen>
+    <dimen name="vip_pay_margin">20dp</dimen>
+    <dimen name="btn_vip_height">40dp</dimen>
+    <dimen name="btn_vip_textSize">16sp</dimen>
+    <dimen name="vip_item_textSize">14sp</dimen>
+    <dimen name="order_item_textSize">12sp</dimen>
+    <dimen name="rad_padding">40dp</dimen>
+    <!-- 下拉刷新 -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/vip_desc_padding" >
+
+            <ImageView
+                android:id="@+id/ivwVipLatest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/vip_desc_padding"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/vip_last" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivwVipLatest" >
+
+                <TextView
+                    android:id="@+id/tvwVipLatestFunc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/vip_latest"
+                    android:textColor="@color/vip_func"
+                    android:textSize="@dimen/vip_func_textSize" />
+
+                <TextView
+                    android:id="@+id/tvwVipLatestDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvwVipLatestFunc"
+                    android:layout_marginTop="@dimen/vip_desc_marginTop"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/vip_latest_desc"
+                    android:textColor="@color/vip_desc"
+                    android:textSize="@dimen/vip_desc_textSize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/vip_desc_padding" >
+
+            <ImageView
+                android:id="@+id/ivwVipComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/vip_desc_padding"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/vip_complete" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivwVipComplete" >
+
+                <TextView
+                    android:id="@+id/tvwVipCompleteFunc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/vip_complete"
+                    android:textColor="@color/vip_func"
+                    android:textSize="@dimen/vip_func_textSize" />
+
+                <TextView
+                    android:id="@+id/tvwVipCompleteDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvwVipCompleteFunc"
+                    android:layout_marginTop="@dimen/vip_desc_marginTop"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/vip_complete_desc"
+                    android:textColor="@color/vip_desc"
+                    android:textSize="@dimen/vip_desc_textSize" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/vip_desc_padding" >
+
+            <ImageView
+                android:id="@+id/ivwVipHD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/vip_desc_padding"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/vip_hd" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivwVipHD" >
+
+                <TextView
+                    android:id="@+id/tvwVipHDFunc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/vip_hd"
+                    android:textColor="@color/vip_func"
+                    android:textSize="@dimen/vip_func_textSize" />
+
+                <TextView
+                    android:id="@+id/tvwVipHDDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvwVipHDFunc"
+                    android:layout_marginTop="@dimen/vip_desc_marginTop"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/vip_hd_desc"
+                    android:textColor="@color/vip_desc"
+                    android:textSize="@dimen/vip_desc_textSize" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/vip_desc_padding" >
+
+            <ImageView
+                android:id="@+id/ivwVipExclusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/vip_desc_padding"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/vip_exclusive" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivwVipExclusive" >
+
+                <TextView
+                    android:id="@+id/tvwVipExclusiveFunc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/vip_exclusive"
+                    android:textColor="@color/vip_func"
+                    android:textSize="@dimen/vip_func_textSize" />
+
+                <TextView
+                    android:id="@+id/tvwVipExclusiveDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvwVipExclusiveFunc"
+                    android:layout_marginTop="@dimen/vip_desc_marginTop"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/vip_exclusive_desc"
+                    android:textColor="@color/vip_desc"
+                    android:textSize="@dimen/vip_desc_textSize" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

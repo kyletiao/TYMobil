@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal"
+              android:minHeight="@dimen/item_minHeight"
+              android:padding="10dp">
+
+    <RelativeLayout
+            android:id="@+id/rltSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="15dp">
+
+        <CheckBox
+                android:id="@+id/chkItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/list_chkitem_selector"
+                android:visibility="gone"
+                android:button="@null"
+                >
+        </CheckBox>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rltDownload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/tvwDownloadName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:text="@string/app_name">
+        </TextView>
+
+        <ProgressBar
+                android:id="@+id/pbrDownload"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_below="@id/tvwDownloadName"/>
+
+        <TextView
+                android:id="@+id/tvwDownloadInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pbrDownload"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/txt_color_grey"
+                android:text="@string/app_name">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rltFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+        <ImageButton
+                android:id="@+id/btnFunction"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wait"
+                android:background="@null">
+        </ImageButton>
+
+        <TextView
+                android:id="@+id/tvwDownloadState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnFunction"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:focusable="false"
+                android:text="@string/app_name">
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

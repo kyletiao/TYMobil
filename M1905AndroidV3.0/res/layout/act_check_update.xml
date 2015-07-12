@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <include
+            android:id="@+id/ileNavi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/top_navi"/>
+
+    <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ileNavi"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name"/>
+
+    <ScrollView
+            android:id="@+id/svwUpdate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/line"
+            android:visibility="visible">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:id="@+id/rltTop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                <ImageView
+                        android:id="@+id/ivwUpdateLogo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_logo"/>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivwUpdateLogo"
+                        android:paddingLeft="40dp">
+
+                    <TextView
+                            android:id="@+id/tvwAppName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                    <TextView
+                            android:id="@+id/tvwUpdateTime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvwAppName"
+                            android:layout_marginBottom="10dp"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/default_unknown"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp"/>
+
+                    <LinearLayout
+                            android:id="@+id/btnUpdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/tvwUpdateTime"
+                            android:background="@drawable/btn_refresh_selector"
+                            android:clickable="true"
+                            android:gravity="center">
+
+                        <ImageView android:layout_width="20dp"
+                                   android:layout_height="20dp"
+                                   android:src="@drawable/icon_update"/>
+
+                        <TextView
+                                android:id="@+id/btnUpdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/btnUpdate"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="2dp"
+                                android:textSize="16sp"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rltBottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/rltTop"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="40dp">
+
+                <TextView
+                        android:id="@+id/tvwUpdateDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/updateDesc"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                <TextView
+                        android:id="@+id/tvwUpdateInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvwUpdateDesc"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="4"
+                        android:text="@string/default_unknown"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+            android:id="@+id/ileLoading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/loading_box"
+            android:visibility="visible"/>
+
+    <TextView
+            android:id="@+id/tvwUpdateState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/updateState_no"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+    <include
+            android:id="@+id/ileNetError"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/net_error"
+            android:visibility="gone"/>
+
+</RelativeLayout>

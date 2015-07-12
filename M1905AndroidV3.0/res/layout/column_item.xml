@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"
+        >
+
+    <RelativeLayout
+            android:id="@+id/rltColumnImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+        <ImageView
+                android:id="@+id/ivwColumnImg"
+                android:layout_width="@dimen/rlt_ivwColumnImg_layout_width"
+                android:layout_height="@dimen/rlt_ivwColumnImg_layout_height"
+                android:background="@drawable/default_video_img_loading"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/t6"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rltColumnInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rltColumnImg"
+            android:paddingLeft="@dimen/rlt_rltColumnInfo_paddingLeft"
+            android:paddingRight="@dimen/rlt_rltColumnInfo_paddingRight">
+
+        <TextView
+                android:id="@+id/tvwColumnName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rlt_rltColumnInfo_paddingRight"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_column_tvwColumnName_textSize"/>
+
+        <TextView
+                android:id="@+id/tvwColumnContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvwColumnName"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lines="3"
+                android:paddingTop="@dimen/column_item_tvw_paddingTop"
+                android:text="@string/tvwVideoContent"
+                android:textColor="@color/column_textColor"
+                android:textSize="@dimen/sp_column_textSize"/>
+    </RelativeLayout>
+
+</RelativeLayout>

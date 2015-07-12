@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg_two" >
+
+    <RelativeLayout
+        android:layout_width="330dip"
+        android:layout_height="350dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/win_bg" >
+
+        <TextView
+            android:id="@+id/tv_win_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="登录"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_win_login"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/win_close" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_win_login"
+            android:layout_marginTop="10dip"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/login_input_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <com.m1905.mobile.ui.LoginNameEditText
+                android:id="@+id/login_et_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <com.m1905.mobile.ui.LoginPassEditText
+                android:id="@+id/login_et_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_et_email" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_input_rl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/my_btn"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/login_btn_register"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/login_btn_login"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/my_btn"
+                android:text="快速注册"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

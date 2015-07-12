@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wap_bottom_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_btnClose"
+        android:layout_width="46dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/wap_close_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_btnGoback"
+            android:layout_width="46dp"
+            android:layout_height="53dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/rlt_btnGoforword" >
+
+            <Button
+                android:id="@+id/btnGoback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:enabled="false"
+                android:background="@drawable/wap_goback_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_btnGoforword"
+            android:layout_width="46dp"
+            android:layout_height="53dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/rlt_btnrefresh" >
+
+            <Button
+                android:id="@+id/btnGoforword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:enabled="false"
+                android:background="@drawable/wap_goforword_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_btnrefresh"
+            android:layout_width="46dp"
+            android:layout_height="53dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wap_refresh_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/ileNavi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_navi" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ileNavi"
+        android:background="@color/btn_navi_line"
+        android:contentDescription="@string/app_name" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/line"
+        android:fadingEdge="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.m1905.mobile.ui.XListView
+                android:id="@+id/lvwSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@null"
+                android:divider="@color/filter_line"
+                android:dividerHeight="1dp" />
+
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/lvwSettings"
+                android:background="@color/filter_line"
+                android:contentDescription="@string/app_name" />
+
+            <com.m1905.mobile.ui.XListView
+                android:id="@+id/lvwOtherSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line2"
+                android:cacheColorHint="@null"
+                android:divider="@color/filter_line"
+                android:dividerHeight="1dp" />
+            <ImageView
+                android:id="@+id/line3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/lvwOtherSettings"
+                android:background="@color/filter_line"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

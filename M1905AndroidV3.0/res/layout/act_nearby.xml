@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/tab_item_layout_height"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/neary_by"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="@dimen/rlt_ivwColumnImg_layout_width"
+        android:horizontalSpacing="@dimen/rlt_rltColumnInfo_HorizontalSpacing"
+        android:listSelector="@color/transparent"
+        android:numColumns="2"
+        android:divider="@color/grey"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/rlt_rltColumnInfo_VerticalSpacing">
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView> -->
+    
+    <ListView android:id="@+id/lv_topics"
+        android:layout_width="fill_parent"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:layout_height="wrap_content">
+        
+    </ListView>
+
+    <include
+            android:id="@+id/ileLoading"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/loading_box" />
+</RelativeLayout>

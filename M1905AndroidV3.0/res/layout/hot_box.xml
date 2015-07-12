@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rltHotTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rlt_rltHotTitle_background"
+        android:paddingBottom="@dimen/rlt_rltHotTitle_paddingBottom"
+        android:paddingTop="@dimen/rlt_rltHotTitle_paddingTop" >
+
+        <ImageView
+            android:id="@+id/ivwHotLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/rlt_ivwHotLogo_layout_marginLeft"
+            android:background="@drawable/hot_logo"
+            android:contentDescription="@string/hotTitle" />
+
+        <TextView
+            android:id="@+id/tvwHotTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/rlt_tvwHotTitle_layout_marginLeft"
+            android:layout_toRightOf="@id/ivwHotLogo"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/hotTitle"
+            android:textColor="@color/content_title"
+            android:textSize="@dimen/sp_rlt_tvwHotTitle_textSize" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvwHotWords"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rltHotTitle"
+        android:cacheColorHint="@color/transparent"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/rad_vip_n" android:state_checked="false"/>
+    <!-- 正常状态 -->
+    <item android:drawable="@drawable/rad_vip_p" android:state_checkable="true"/>
+    <!-- 点击状态 -->
+    <item android:drawable="@drawable/rad_vip_s" android:state_checked="true"/>
+    <!-- 选中状态 -->
+
+</selector>

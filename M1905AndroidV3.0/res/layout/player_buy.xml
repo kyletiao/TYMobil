@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <ScrollView
+            android:id="@+id/player_buy_sv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:visibility="gone"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:fadingEdgeLength="0dp"
+            >
+        <LinearLayout
+                android:id="@+id/buy_input_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+            <GridView
+                    android:id="@+id/player_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:visibility="gone"
+                    android:verticalSpacing="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:numColumns="2"/>
+
+            <Button
+                    android:id="@+id/btn_goIn"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:background="@color/login_btn"
+                    android:visibility="gone"
+                    android:text="立即加入"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

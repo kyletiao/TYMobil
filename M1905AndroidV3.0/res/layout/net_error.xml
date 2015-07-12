@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/ivwErrorLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/net_error_logo" />
+
+    <TextView
+        android:id="@+id/tvwNetErrorNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivwErrorLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="@string/netErrorNotice"
+        android:textColor="@color/net_error"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvwNetErrorDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvwNetErrorNotice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="@string/netErrorDesc"
+        android:textColor="@color/net_error"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvwNetErrorDesc"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_refresh_selector"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="@string/btnRefresh"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

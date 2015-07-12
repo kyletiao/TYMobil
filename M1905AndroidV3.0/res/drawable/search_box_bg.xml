@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 设置固定的背景颜色为透明的 -->
+    <solid android:color="#E8E8E8" />
+    <!-- 设置固定的高度 -->
+    <size android:height="@dimen/search_box_bg_height" />
+    <!-- 设置边角的圆滑度 -->
+    <corners
+        android:bottomLeftRadius="5dip"
+        android:bottomRightRadius="5dip"
+        android:topLeftRadius="5dip"
+        android:topRightRadius="5dip" />
+
+</shape>

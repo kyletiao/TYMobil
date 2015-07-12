@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ileNavi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_navi" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ileNavi"
+        android:background="@color/btn_navi_line"
+        android:contentDescription="@string/app_name" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/line"
+        android:background="#f0f0f0"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rltData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <include
+                    android:id="@+id/ileVipMonth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/vip_month_box"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/ileVipOrder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/vip_order_box"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/ileNetError"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="30dp"
+                    layout="@layout/net_error"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/ileLoading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="60dp"
+                    layout="@layout/loading_box" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/ileVipIntroduce"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rltData"
+                android:layout_margin="10dp"
+                layout="@layout/vip_introduce_box" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

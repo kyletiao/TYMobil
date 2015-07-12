@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="wd_item_color">#999999</color>
+    <color name="search_item">#666666</color>
+    <color name="content_title">#444444</color>
+    <color name="title_cn">#666666</color>
+    <color name="pf_cn">#ef4136</color>
+    <!-- tab 选项卡 -->
+    <color name="tab_item_text_s">#ffffff</color>
+    <color name="tab_item_text_n">#3b3b3b</color>
+    <color name="tab_item_bg_p">#a4e0f9</color>
+    <color name="tab_item_bg_s">#0090cd</color>
+    <!-- 头图 -->
+    <color name="flt_rltTopInfo_background">#000000</color>
+    <color name="rlt_tvwTopInfo_textColor">#ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="grey">#ffcccccc</color>
+    <color name="dark">#000000</color>
+    <color name="filter_btn">#F42E86</color>
+    <color name="green">#CCFF99</color>
+    <color name="wd_item_image">#a7dcf7</color>
+
+    <!-- 搜索 -->
+    <color name="rlt_edtSearchBox_textColor">#000000</color>
+    <color name="rlt_edtSearchBox_textColorHint">#a3a3a3</color>
+    <color name="rlt_rltHotTitle_background">#F6F0F0</color>
+    <color name="rlt_rltRelateTitle_background">#ABE2FC</color>
+    <!-- video item img 按下颜色 -->
+    <color name="video_item_img_press">#EEF3F7</color>
+    <!-- 搜索结果 -->
+    <color name="search_video_score">#F52D87</color>
+    <color name="search_textColor">#B6B6B6</color>
+
+    <!-- 周边 -->
+    <color name="column_textColor">#B6B6B6</color>
+    <color name="column_background">#DCDCDC</color>
+
+    <!-- 我的 -->
+    <color name="rlt_tvwUserName_textColor">#0190CE</color>
+    <color name="rlt_ivwVipLogo_textColor">#DD0A69</color>
+    <color name="rlt_btnLogout_textColor">#b1b1b1</color>
+    <color name="login_title">#006e9c</color>
+
+    <!-- 播放器 -->
+    <color name="cr_transparent_50">#9000</color>
+
+    <!-- 下载 -->
+    <color name="backGround">#e3e3e3</color>
+    <color name="newsItemText">#4c4c4c</color>
+    <color name="login_btn">#0090CD</color>
+    <!-- 电影导航 -->
+    <color name="filter_text_n">#575757</color>
+ <!-- 未激活 -->
+    <color name="filter_bg_p">#e8e8e8</color>
+ <!-- 激活 -->
+    <color name="filter_bg_border_p">#dddddd</color>
+ <!-- 激活 -->
+    <color name="btn_navi_line">#cbcaca</color>
+    <color name="filter_line">#d7d7d7</color>
+
+    <!-- 网络错误 -->
+    <color name="net_error">#a0a0a0</color>
+
+    <!-- 播放记录和我的收藏 -->
+    <color name="bottom_btn_n">#E7E7E7</color>
+    <color name="bottom_btn_p">#ffffff</color>
+
+    <!-- 消费记录 -->
+    <color name="txt_color_grey">#9D9D9D</color>
+    <color name="txt_color_blue">#0284B8</color>
+    <color name="btn_focus">#007cb1</color>
+    <color name="btn_normal">#0090CD</color>
+    <color name="login_register_text">#cbcbcb</color>
+    <color name="vip_func">#6D6D6D</color>
+    <color name="vip_desc">#9D9D9D</color>
+    <color name="order_desc">#A2A2A2</color>
+    <color name="order_border">#DBDBDB</color>
+    <color name="order_pay_method">#505050</color>
+    
+    <color name="tianyi_grey">#999999</color>
+
+</resources>

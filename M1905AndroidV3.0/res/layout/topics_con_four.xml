@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_three_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:textColor="@color/content_title"
+        android:text="相互勾搭叫爱情"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_ones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_three_title"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_ones"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_ones"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="@dimen/rlt_ivwVideoImg_layout_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/default_video_img_loading"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_item_selector" />
+
+            <TextView
+                android:id="@+id/tv_ones"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_ones"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:paddingBottom="@dimen/rlt_tvwVideoName_paddingBottom"
+                android:paddingLeft="@dimen/rlt_tvwVideoName_paddingLeft"
+                android:paddingRight="@dimen/rlt_tvwVideoName_paddingRight"
+                android:paddingTop="@dimen/rlt_tvwVideoName_paddingTop"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/wd_item_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_twos"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_twos"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="@dimen/rlt_ivwVideoImg_layout_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/default_video_img_loading"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_item_selector" />
+
+            <TextView
+                android:id="@+id/tv_twos"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_twos"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:paddingBottom="@dimen/rlt_tvwVideoName_paddingBottom"
+                android:paddingLeft="@dimen/rlt_tvwVideoName_paddingLeft"
+                android:paddingRight="@dimen/rlt_tvwVideoName_paddingRight"
+                android:paddingTop="@dimen/rlt_tvwVideoName_paddingTop"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/wd_item_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_threes"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_threes"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="@dimen/rlt_ivwVideoImg_layout_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/default_video_img_loading"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_item_selector" />
+
+            <TextView
+                android:id="@+id/tv_threes"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_threes"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:paddingBottom="@dimen/rlt_tvwVideoName_paddingBottom"
+                android:paddingLeft="@dimen/rlt_tvwVideoName_paddingLeft"
+                android:paddingRight="@dimen/rlt_tvwVideoName_paddingRight"
+                android:paddingTop="@dimen/rlt_tvwVideoName_paddingTop"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/wd_item_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_twos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_ones"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_fours"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_fours"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="@dimen/rlt_ivwVideoImg_layout_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/default_video_img_loading"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_item_selector" />
+
+            <TextView
+                android:id="@+id/tv_fours"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_fours"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:paddingBottom="@dimen/rlt_tvwVideoName_paddingBottom"
+                android:paddingLeft="@dimen/rlt_tvwVideoName_paddingLeft"
+                android:paddingRight="@dimen/rlt_tvwVideoName_paddingRight"
+                android:paddingTop="@dimen/rlt_tvwVideoName_paddingTop"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/wd_item_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fives"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_fives"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="@dimen/rlt_ivwVideoImg_layout_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/default_video_img_loading"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_item_selector" />
+
+            <TextView
+                android:id="@+id/tv_fives"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_fives"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:paddingBottom="@dimen/rlt_tvwVideoName_paddingBottom"
+                android:paddingLeft="@dimen/rlt_tvwVideoName_paddingLeft"
+                android:paddingRight="@dimen/rlt_tvwVideoName_paddingRight"
+                android:paddingTop="@dimen/rlt_tvwVideoName_paddingTop"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/wd_item_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sixs"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/iv_sixs"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="@dimen/rlt_ivwVideoImg_layout_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/default_video_img_loading"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_item_selector" />
+
+            <TextView
+                android:id="@+id/tv_sixs"
+                android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_sixs"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:paddingBottom="@dimen/rlt_tvwVideoName_paddingBottom"
+                android:paddingLeft="@dimen/rlt_tvwVideoName_paddingLeft"
+                android:paddingRight="@dimen/rlt_tvwVideoName_paddingRight"
+                android:paddingTop="@dimen/rlt_tvwVideoName_paddingTop"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/wd_item_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

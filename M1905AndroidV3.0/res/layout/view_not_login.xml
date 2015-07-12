@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/ivwIcon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_notlogin"
+            android:layout_gravity="center_horizontal"
+            />
+
+    <TextView
+            android:id="@+id/tvwTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/notloginTip"/>
+
+    <TextView
+            android:id="@+id/tvwSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color_grey"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="@string/noData"/>
+
+</LinearLayout>

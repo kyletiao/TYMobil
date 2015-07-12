@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top" >
+
+    <RelativeLayout
+        android:id="@+id/login_input_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+
+        <com.m1905.mobile.ui.RegisterNameEditText
+            android:id="@+id/register_et_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <com.m1905.mobile.ui.LoginPassEditText
+                android:id="@+id/register_et_password"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/register_et_email"
+                android:layout_height="wrap_content" />
+        <com.m1905.mobile.ui.VerificationPassEditText
+                android:id="@+id/register_et_pass_again"
+                android:layout_width="200dip"
+                android:layout_below="@id/register_et_password"
+                android:layout_height="wrap_content" />
+        <Button android:id="@+id/bt_verification"
+            android:layout_width="100dip"
+            android:layout_height="40dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/my_btn"
+            android:layout_alignBottom="@id/register_et_pass_again"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/button_rl"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_input_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/my_btn"
+            android:text="立即注册"
+            android:textColor="@color/white"
+            android:textSize="16sp"  />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

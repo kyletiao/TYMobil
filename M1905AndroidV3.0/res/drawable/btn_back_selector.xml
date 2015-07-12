@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/back_n" android:state_enabled="true" android:state_focused="false" android:state_pressed="false" android:state_selected="false"/>
+    <!-- 正常状态 -->
+    <item android:drawable="@drawable/back_p" android:state_enabled="true" android:state_focused="false" android:state_pressed="true" android:state_selected="false"/>
+    <!-- 点击状态 -->
+    <item android:drawable="@drawable/back_p" android:state_enabled="true" android:state_focused="false" android:state_pressed="false" android:state_selected="true"/>
+    <!-- 选中状态 -->
+    <item android:drawable="@drawable/back_en" android:state_enabled="false"></item>
+
+</selector>

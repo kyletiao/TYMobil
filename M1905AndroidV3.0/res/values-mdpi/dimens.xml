@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 搜索背景框大小 -->
+    <dimen name="search_box_bg_height">41dp</dimen>
+
+</resources>

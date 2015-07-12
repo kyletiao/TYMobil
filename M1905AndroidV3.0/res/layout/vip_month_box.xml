@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.m1905.mobile.ui.XListView
+        android:id="@+id/lvwVipMonth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#dbdbdb"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/lvwVipMonth"
+        android:background="#dbdbdb"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:paddingBottom="20dp" >
+
+        <Button
+            android:id="@+id/btnVipMonth"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/btn_vip_height"
+            android:layout_margin="@dimen/vip_pay_margin"
+            android:background="@drawable/btn_vip_style_n"
+            android:text="@string/buy_vip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_vip_textSize" />
+    </RelativeLayout>
+
+</RelativeLayout>

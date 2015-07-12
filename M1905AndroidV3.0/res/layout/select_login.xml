@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <RelativeLayout
+            android:id="@+id/rlt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_list_back_selector"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/btn_function"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlt_title"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center">
+        <LinearLayout
+                android:id="@+id/btn_sina_login"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_login_item_bg_selector"
+                >
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@null"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginBottom="8dp"
+                       android:src="@drawable/login_sina"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="40dp"
+                      android:textSize="19sp"
+                      android:text="新浪微博登录"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/btn_tencent"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_login_item_bg_selector"
+                >
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@null"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginBottom="8dp"
+                       android:src="@drawable/login_qq"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="40dp"
+                      android:textSize="19sp"
+                      android:text="腾讯QQ登录"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/btn_m1905"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login_item_bg_selector"
+                >
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@null"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginBottom="8dp"
+                       android:src="@drawable/login_m1905"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="40dp"
+                      android:textSize="19sp"
+                      android:text="TV189登录"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/rlt_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_function"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:gravity="center">
+
+        <TextView android:id="@+id/register"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="没有TV189账号，立即注册"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                />
+    </RelativeLayout>
+
+
+</RelativeLayout>

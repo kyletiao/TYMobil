@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/search_item_padding" >
+
+    <ScrollView
+        android:id="@+id/player_video_into_Content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:fadingEdgeLength="0dp">
+
+        <RelativeLayout
+            android:id="@+id/rltVideoImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <RelativeLayout
+                android:id="@+id/rltVideoInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/rlt_rltVideoInfo_paddingLeft"
+                android:paddingRight="@dimen/rlt_rltVideoInfo_paddingRight" >
+
+                <RelativeLayout
+                    android:id="@+id/rltTopInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvwVideoScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="@string/default_unknown"
+                        android:textColor="@color/pf_cn"
+                        android:textSize="@dimen/sp_search_tvwVideoScore_textSize" />
+
+                    <TextView
+                        android:id="@+id/tvwVideoName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/rlt_rltVideoInfo_paddingRight"
+                        android:layout_toLeftOf="@id/tvwVideoScore"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textColor="@color/content_title"
+                        android:textSize="@dimen/sp_search_tvwVideoName_textSize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rltDirector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rltTopInfo"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:id="@+id/tvwVideoDirectorNotice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="@string/tvwVideoDirectorNotice"
+                        android:textColor="@color/wd_item_color"
+                        android:textSize="@dimen/sp_search_textSize" />
+
+                    <TextView
+                        android:id="@+id/tvwVideoDirector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tvwVideoDirectorNotice"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:textColor="@color/search_item"
+                        android:textSize="@dimen/sp_search_textSize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rltActor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rltDirector"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:id="@+id/tvwVideoActorNotice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                        android:singleLine="true"
+                        android:text="@string/tvwVideoActorNotice"
+                        android:textColor="@color/wd_item_color"
+                        android:textSize="@dimen/sp_search_textSize" />
+
+                    <TextView
+                        android:id="@+id/tvwVideoActor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tvwVideoActorNotice"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                        android:singleLine="true"
+                        android:textColor="@color/search_item"
+                        android:textSize="@dimen/sp_search_textSize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/TypeAnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rltActor" >
+
+                    <RelativeLayout
+                        android:id="@+id/rltType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left" >
+
+                        <TextView
+                            android:id="@+id/tvwVideoTypeNotice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                            android:singleLine="true"
+                            android:text="类型："
+                            android:textColor="@color/wd_item_color"
+                            android:textSize="@dimen/sp_search_textSize" />
+
+                        <TextView
+                            android:id="@+id/tvwVideoType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tvwVideoTypeNotice"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                            android:singleLine="true"
+                            android:maxEms="6"
+                            android:textColor="@color/search_item"
+                            android:textSize="@dimen/sp_search_textSize" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+				
+                <RelativeLayout
+                        android:id="@+id/rltArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/TypeAnd"
+                        android:layout_marginRight="80dp" >
+
+                        <TextView
+                            android:id="@+id/tvwVideoAreaNotice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                            android:singleLine="true"
+                            android:text="地区："
+                            android:textColor="@color/wd_item_color"
+                            android:textSize="@dimen/sp_search_textSize" />
+
+                        <TextView
+                            android:id="@+id/tvwVideoArea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tvwVideoAreaNotice"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                            android:singleLine="true"
+                            android:textColor="@color/search_item"
+                            android:textSize="@dimen/sp_search_textSize" />
+                    </RelativeLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/TimeAnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TypeAnd" >
+
+                    <RelativeLayout
+                        android:id="@+id/rltLength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left" >
+
+                        <TextView
+                            android:id="@+id/tvwVideoLengthNotice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                            android:singleLine="true"
+                            android:text="片长："
+                            android:textColor="@color/wd_item_color"
+                            android:textSize="@dimen/sp_search_textSize" />
+
+                        <TextView
+                            android:id="@+id/tvwVideoLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tvwVideoLengthNotice"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                            android:textColor="@color/search_item"
+                            android:textSize="@dimen/sp_search_textSize" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+				<RelativeLayout
+                        android:id="@+id/rltTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/TimeAnd"
+                        android:layout_alignLeft="@id/rltArea"
+                         >
+
+                        <TextView
+                            android:id="@+id/tvwVideoTimeNotice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                            android:singleLine="true"
+                            android:text="时间："
+                            android:textColor="@color/wd_item_color"
+                            android:textSize="@dimen/sp_search_textSize" />
+
+                        <TextView
+                            android:id="@+id/tvwVideoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tvwVideoTimeNotice"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                            android:textColor="@color/search_item"
+                            android:textSize="@dimen/sp_search_textSize" />
+                    </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TimeAnd"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/tvwVideoIntro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                        android:text="剧情介绍："
+                        android:textColor="@color/wd_item_color"
+                        android:textSize="@dimen/sp_search_textSize" />
+
+                    <TextView
+                        android:id="@+id/tvwVideoContentNotice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvwVideoIntro"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/search_item_tvw_paddingTop"
+                        android:textColor="@color/wd_item_color"
+                        android:lineSpacingExtra="3dp"
+                        android:textSize="@dimen/sp_search_textSize" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

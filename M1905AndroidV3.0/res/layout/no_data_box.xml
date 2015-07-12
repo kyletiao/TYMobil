@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/no_data_box_paddingBottom"
+    android:paddingTop="@dimen/no_data_box_paddingTop" >
+
+    <ImageView
+        android:id="@+id/ivwSearchLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/noPlayNotice"
+        android:layout_marginBottom="@dimen/rlt_ivwSearchLogo_layout_marginBottom"
+        android:src="@drawable/search_logo" />
+
+    <TextView
+        android:id="@+id/tvwNoDataNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rlt_tvwNoDataNotice_layout_layout_marginTop"
+        android:layout_below="@id/ivwSearchLogo"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="@string/noPlayNotice"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/sp_rlt_tvwHotWord_textSize" />
+
+</RelativeLayout>

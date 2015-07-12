@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rltSearchTop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingBottom="@dimen/rlt_rltSearchTop_paddingBottom"
+    android:paddingTop="@dimen/rlt_rltSearchTop_paddingTop" >
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/rlt_btnSearch_layout_marginLeft"
+        android:layout_marginRight="@dimen/rlt_btnSearch_layout_marginRight"
+        android:background="@drawable/btn_search_selector"
+        android:enabled="false" />
+
+    <RelativeLayout
+        android:id="@+id/rltSearchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/rlt_rltSearchBox_layout_marginLeft"
+        android:layout_toLeftOf="@id/btnSearch"
+        android:background="@drawable/search_box_bg" >
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/rlt_btnDelete_layout_margin"
+            android:background="@drawable/btn_delete_selector"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/edtSearchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/rlt_edtSearchBox_marginLeft"
+            android:layout_toLeftOf="@id/btnDelete"
+            android:background="@color/transparent"
+            android:hint="@string/edtSearchBox_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColor="@color/content_title"
+            android:textSize="16sp"
+            android:textColorHint="@color/rlt_edtSearchBox_textColorHint" />
+    </RelativeLayout>
+
+</RelativeLayout>

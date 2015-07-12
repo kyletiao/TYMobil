@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg_two" >
+
+    <RelativeLayout
+        android:layout_width="330dip"
+        android:layout_height="380dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/win_bg" >
+
+        <TextView
+            android:id="@+id/tv_win_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="请订购"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_win_login"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/win_close" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_win_login"
+            android:layout_marginTop="10dip"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_baoyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="包月:15/月"
+            android:textColor="@color/btn_focus"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/button_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_baoyue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/my_btn"
+                android:text="订购"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_dinggoutishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/button_rl"
+            android:layout_below="@id/button_rl"
+            android:layout_marginTop="10dip"
+            android:text="订购提示"
+            android:textColor="@color/btn_focus" />
+
+        <ImageView
+            android:id="@+id/line_one"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_dinggoutishi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dip"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name" />
+        <TextView android:id="@+id/tv_tscontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    费用将从电信账单支付，以上费用不含上网通信费，建议您致电当地电信运营商选择合适的上网套餐或选择WLAN网络播放视频。"
+            android:layout_below="@id/line_one"
+            android:layout_marginTop="6dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/tianyi_grey"/>
+        <TextView
+            android:id="@+id/tv_huiyuanquanyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_tscontent"
+            android:layout_below="@id/tv_tscontent"
+            android:layout_marginTop="20dip"
+            android:text="会员权益"
+            android:textColor="@color/btn_focus" />
+
+        <ImageView
+            android:id="@+id/line_two"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_huiyuanquanyi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dip"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name" />
+        <TextView android:id="@+id/tv_hycontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、1080P超高清电影，随时看\n2、无需等待广告，电影立即看\n3、最新独家院线新片抢先看\n4、海量内容全覆盖尽情看"
+            android:layout_below="@id/line_two"
+            android:layout_marginTop="6dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/tianyi_grey"/>
+    </RelativeLayout>
+
+</RelativeLayout>

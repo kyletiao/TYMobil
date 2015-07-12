@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 搜索背景框大小 -->
+    <dimen name="search_box_bg_height">36.67dp</dimen>
+    <!-- vip -->
+    <dimen name="btn_vip_height">40dp</dimen>
+    <dimen name="rad_padding">40dp</dimen>
+
+</resources>

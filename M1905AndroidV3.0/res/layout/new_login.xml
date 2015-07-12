@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_list_back_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="登录"
+                android:textColor="@color/tab_item_bg_s"
+                android:textSize="18sp" />
+            <com.m1905.mobile.ui.SyncHorizontalScrollView
+                android:id="@+id/mhsv"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_scroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="bottom" >
+
+                    <RadioGroup
+                        android:id="@+id/tab_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+                    </RadioGroup>
+
+                    <ImageView
+                        android:id="@+id/cursor"
+                        android:layout_width="1dip"
+                        android:layout_height="5dip"
+                        android:layout_alignParentBottom="true"
+                        android:background="#0090cd"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="matrix"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </com.m1905.mobile.ui.SyncHorizontalScrollView>
+            
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll_tab"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/login_logo" />
+
+        <RelativeLayout
+            android:id="@+id/login_input_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_logo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <com.m1905.mobile.ui.LoginNameEditText
+                android:id="@+id/login_et_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <com.m1905.mobile.ui.LoginPassEditText
+                android:id="@+id/login_et_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_et_email" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_input_rl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/my_btn"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/login_btn_register"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/login_btn_login"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/my_btn"
+                android:text="快速注册"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            
+            <TextView android:id="@+id/tv_password_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找回密码？"
+                android:textSize="16sp"
+                android:textColor="@color/btn_focus"
+                android:layout_below="@id/login_btn_register"
+                android:layout_marginTop="20dip"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

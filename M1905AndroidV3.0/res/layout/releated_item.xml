@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/hot_item_paddingBottom"
+    android:paddingTop="@dimen/hot_item_paddingTop" >
+
+    <TextView
+        android:id="@+id/tvwReleated"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:paddingLeft="@dimen/rlt_tvwHotWord_paddingLeft"
+        android:paddingRight="@dimen/rlt_tvwHotWord_paddingRight"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_rlt_tvwHotWord_textSize" />
+
+</RelativeLayout>

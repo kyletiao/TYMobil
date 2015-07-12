@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_topics_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:textColor="@color/content_title"
+        android:text="韩国电影精彩回顾"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_topics_description"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_topics_title"
+        android:layout_below="@id/tv_topics_title"
+        android:layout_marginTop="7dip"
+        android:lines="1"
+        android:text="优秀韩国电影一网打尽"
+        android:textColor="@color/tianyi_grey"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_topics"
+        android:layout_width="87dip"
+        android:layout_height="66dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/zt_item_bg"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/iv_topics"
+        android:layout_marginTop="10dip"
+        android:background="@color/btn_navi_line"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

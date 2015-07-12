@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+   <LinearLayout
+        android:id="@+id/videoplay_layout_sound"
+        android:layout_marginLeft="15px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#60000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.m1905.mobile.ui.SeekBar
+            android:id="@+id/videoplay_layout_sound_change_seekbar"
+            android:layout_width="29dp"
+            android:layout_height="160dp"
+            android:maxHeight="7dip"
+            android:minHeight="7dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="3dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:progress="100"
+            android:progressDrawable="@drawable/seekbar_sound_style"
+            android:thumb="@drawable/play_jindu_point"
+            android:thumbOffset="4dip" />
+
+        <ImageButton
+            android:id="@+id/volumebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ctr_has_voice" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   >
+    
+    <RelativeLayout
+        android:id="@+id/videoplay_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cr_transparent_50"
+    	android:padding="@dimen/mini_player_control_padding_5" 
+        android:gravity="center" >
+
+    <Button
+        android:id="@+id/ctrBtnPlay"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/mini_player_control_padding_10"
+        android:background="@drawable/ctr_pause_selector" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ctrBtnMicFullScreen"
+        android:layout_toRightOf="@id/ctrBtnPlay" >
+
+        <SeekBar
+            android:id="@+id/videoplay_seekbar_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:maxHeight="5dip"
+            android:minHeight="5dip"
+            android:progress="0"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:progressDrawable="@drawable/seekbar_time_style"
+            android:secondaryProgress="10"
+            android:thumb="@drawable/play_jindu_point"
+            android:thumbOffset="6dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ctrBtnMicFullScreen"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/mini_player_control_padding_10"
+        android:background="@drawable/ctr_full_screen_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

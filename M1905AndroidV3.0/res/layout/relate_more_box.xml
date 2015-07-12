@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/ileNoDataBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/no_data_box" />
+
+    <RelativeLayout
+        android:id="@+id/rltRelateTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ileNoDataBox"
+        android:background="@color/rlt_rltRelateTitle_background"
+        android:paddingBottom="@dimen/rlt_rltRelateTitle_paddingBottom"
+        android:paddingTop="@dimen/rlt_rltRelateTitle_paddingTop" >
+
+        <ImageView
+            android:id="@+id/ivwRelateLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/rlt_ivwRelateLogo_layout_marginLeft"
+            android:background="@drawable/relation_logo"
+            android:contentDescription="@string/relateTitle" />
+
+        <TextView
+            android:id="@+id/tvwRelateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/rlt_tvwRelateTitle_layout_marginLeft"
+            android:layout_toRightOf="@id/ivwRelateLogo"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/relateTitle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_rlt_tvwRelateTitle_textSize" />
+    </RelativeLayout>
+
+</RelativeLayout>

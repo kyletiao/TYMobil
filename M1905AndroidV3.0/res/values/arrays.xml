@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="film_resolution">
+	    <item>高清</item>
+	    <item>标清</item>
+	</string-array>
+    <string-array name="film_mtype">
+        <item>全部</item>
+        <item>科幻</item>
+        <item>动作</item>
+        <item>悬疑</item>
+        <item>爱情</item>
+        <item>恐怖</item>
+        <item>喜剧</item>
+        <item>剧情</item>
+    </string-array>
+    <string-array name="film_area">
+        <item>全部</item>
+        <item>内地</item>
+        <item>港台</item>
+        <item>欧美</item>
+        <item>日韩</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="film_year">
+        <item>全部</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>21世纪初</item>
+        <item>90年代</item>
+        <item>80年代</item>
+    </string-array>
+    <string-array name="film_most">
+        <item>全部</item>
+        <item>最新</item>
+        <item>最热</item>
+    </string-array>
+    <string-array name="film_type">
+        <item>会员影片</item>
+    </string-array>
+
+</resources>

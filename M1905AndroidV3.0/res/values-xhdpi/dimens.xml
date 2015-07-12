@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- video_item -->
+    <dimen name="rlt_ivwVideoImg_layout_width">105dp</dimen>
+    <dimen name="rlt_ivwVideoImg_layout_height">145dp</dimen>
+    <dimen name="myrlt_ivwVideoImg_layout_width">170dp</dimen>
+    <dimen name="myrlt_ivwVideoImg_layout_height">105dp</dimen>
+    <!-- 搜索背景框大小 -->
+    <dimen name="search_box_bg_height">31dp</dimen>
+    <!-- vip -->
+    <dimen name="vip_func_textSize">16sp</dimen>
+    <dimen name="vip_desc_textSize">14sp</dimen>
+    <dimen name="btn_vip_height">40dp</dimen>
+    <dimen name="rad_padding">30dp</dimen>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg_two" >
+
+    <RelativeLayout
+        android:layout_width="240dip"
+        android:layout_height="180dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/win_bg" >
+
+        <TextView
+            android:id="@+id/tv_win_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dip"
+            android:text="是否要退出TV189院线？"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_win_login"
+            android:layout_marginTop="50dip"
+            android:background="@color/btn_navi_line"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line" >
+
+            <ImageView
+                android:id="@+id/lines"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/btn_navi_line"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/rl_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@id/lines" >
+
+                <TextView
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="取消"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_no"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignRight="@id/lines" >
+
+                <TextView
+                    android:id="@+id/btn_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="确认"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

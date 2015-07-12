@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/search_item_padding" >
+
+    <RelativeLayout
+        android:id="@+id/rltVideoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/ivwVideoImg"
+            android:layout_width="@dimen/rlt_ivwVideoImg_layout_width"
+            android:layout_height="@dimen/rlt_ivwVideoImg_layout_height"
+            android:background="@drawable/default_video_img_loading"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/video_item_selector" />
+
+        <ImageView
+            android:id="@+id/ivwVIPLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ivwVideoImg"
+            android:background="@drawable/vip_logo"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltVideoInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rltVideoImg"
+        android:paddingLeft="@dimen/rlt_rltVideoInfo_paddingLeft"
+        android:paddingRight="@dimen/rlt_rltVideoInfo_paddingRight" >
+
+        <RelativeLayout
+            android:id="@+id/rltTopInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvwVideoScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:text="@string/default_unknown"
+                android:visibility="gone"
+                android:textColor="@color/search_video_score"
+                android:textSize="@dimen/sp_search_tvwVideoScore_textSize" />
+
+            <TextView
+                android:id="@+id/tvwVideoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rlt_rltVideoInfo_paddingRight"
+                android:layout_toLeftOf="@id/tvwVideoScore"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/content_title"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvwVideoDirectorNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rltTopInfo"
+            android:gravity="left"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="@string/tvwVideoDirectorNotice"
+            android:textColor="@color/search_textColor"
+            android:textSize="@dimen/sp_search_textSize" />
+
+        <TextView
+            android:id="@+id/tvwVideoDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rltTopInfo"
+            android:layout_toRightOf="@id/tvwVideoDirectorNotice"
+            android:gravity="left"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:text="@string/default_unknown"
+            android:textColor="@color/search_textColor"
+            android:textSize="@dimen/sp_search_textSize" />
+
+        <TextView
+            android:id="@+id/tvwVideoActorNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvwVideoDirectorNotice"
+            android:gravity="left"
+            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+            android:singleLine="true"
+            android:text="@string/tvwVideoActorNotice"
+            android:visibility="gone"
+            android:textColor="@color/search_textColor"
+            android:textSize="@dimen/sp_search_textSize" />
+
+        <TextView
+            android:id="@+id/tvwVideoActor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvwVideoDirectorNotice"
+            android:layout_toRightOf="@id/tvwVideoActorNotice"
+            android:gravity="left"
+            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+            android:singleLine="true"
+            android:text="@string/default_unknown"
+            android:visibility="gone"
+            android:textColor="@color/search_textColor"
+            android:textSize="@dimen/sp_search_textSize" />
+
+        <TextView
+            android:id="@+id/tvwVideoContentNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvwVideoActorNotice"
+            android:gravity="left"
+            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:text="@string/tvwVideoContentNotice"
+            android:textColor="@color/search_textColor"
+            android:textSize="@dimen/sp_search_textSize" />
+
+        <TextView
+            android:id="@+id/tvwVideoContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvwVideoActor"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:lines="4"
+            android:paddingTop="@dimen/search_item_tvw_paddingTop"
+            android:layout_marginTop="20dip"
+            android:text="@string/tvwVideoContent"
+            android:textColor="@color/search_textColor"
+            android:textSize="@dimen/sp_search_textSize" />
+    </RelativeLayout>
+
+</RelativeLayout>

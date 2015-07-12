@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rltDataContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rltTopImgs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/fltPager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.m1905.mobile.ui.XViewFlipper
+                android:id="@+id/vfrTopImgs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none" />
+
+            <RelativeLayout
+                android:id="@+id/rltTopInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/flt_rltTopInfo_layout_height"
+                android:layout_gravity="bottom"
+                android:background="@color/flt_rltTopInfo_background"
+                android:paddingLeft="@dimen/flt_rltTopInfo_paddingLeft"
+                android:paddingRight="@dimen/flt_rltTopInfo_paddingRight" >
+
+                <TextView
+                    android:id="@+id/tvwTopInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:ems="11"
+                    android:singleLine="true"
+                    android:textColor="@color/rlt_tvwTopInfo_textColor"
+                    android:textSize="@dimen/sp_rlt_tvwTopInfo_textSize" />
+
+                <LinearLayout
+                    android:id="@+id/lltTopDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lltContentInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rltTopImgs"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/rlt_tvwVideoName_paddingBottom"
+        android:visibility="gone" >
+
+        <!-- 强片推荐 -->
+
+        <include
+            android:id="@+id/ileRecoVideos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/gvw_box"
+            android:visibility="gone" />
+        <!-- 新片预告 -->
+
+        <include
+            android:id="@+id/ileNewVideos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/new_trailer"
+            android:visibility="gone" />
+        <!-- 好莱坞 -->
+
+        <include
+            android:id="@+id/ileHotVideos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/gvw_box"
+            android:visibility="gone" />
+        <!-- 华语强档 -->
+
+        <include
+            android:id="@+id/ileCCTVVideos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/gvw_box"
+            android:visibility="gone" />
+        <!-- 日韩专区 -->
+
+        <include
+            android:id="@+id/ileFreeVideos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/gvw_box"
+            android:visibility="gone" />
+        <!-- 异色欧美 -->
+
+        <include
+            android:id="@+id/ileEsVideos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/gvw_box"
+            android:visibility="gone" />
+        <!-- 微片 -->
+
+        <include
+            android:id="@+id/ileWpVideos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/gvw_box"
+            android:visibility="gone" />
+        <!-- 免费专区 -->
+
+        <include
+            android:id="@+id/ileMfVideos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/gvw_box"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
